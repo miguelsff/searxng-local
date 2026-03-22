@@ -1,0 +1,22 @@
+use_default_settings: true
+
+server:
+  secret_key: "05efe704182c1bcbd3979e542fabf6575b83823087f820714bae52b27a74ba06"
+  limiter: false
+  image_proxy: true
+
+redis:
+  url: redis://searxng-redis:6379/0
+
+search:
+  safe_search: 0
+  autocomplete: "google"
+  default_lang: "es"
+  formats:
+    - html
+    - json
+
+ui:
+  default_theme: simple
+  theme_args:
+    simple_style: auto
